@@ -1,0 +1,433 @@
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: crimson;
+    color: white;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    background-color: rgb(2, 2, 39);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px 2px rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    padding-right: 30px;
+}
+
+.header ul{
+    display: flex;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+
+.header ul li{
+    list-style: none;
+}
+
+.header ul li a{
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    transition: background .5s ease-in-out;
+}
+
+.header h1{
+    padding-left: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.header ul li a:hover{
+    background-color: crimson;
+    color: white;
+    border-radius: 20%; 
+}
+
+.backgroung-image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.95)), url(./colorful.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.backgroung-image h1{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    z-index: 6;
+    color: white;
+}
+
+.about-section{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+}
+
+.about-section-title h1{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25%;
+    padding-bottom: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 26px;
+}
+
+
+.about-section-image img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 3%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.about-section-content{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.about-who{
+    padding-top: 35px;
+    line-height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-who h1{
+    font-size: 24px;
+}
+
+.about-who h3{
+    font-size: 16px;
+}
+
+.about-section-content p {
+    padding-top: 20px;
+}
+
+
+.box-for-skill{
+    position: relative;
+    width: 90%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.skill h1{
+    text-align: center;
+    padding-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+
+}
+
+.skill {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.box-for-achievement{
+    position: relative;
+    width: 90%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.achievement {
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.achievement h1{
+    padding-top: 40px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.achievement p{
+    padding-bottom: 20px;
+    
+}
+
+
+
+
+.footer{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-color: rgb(2, 2, 39);
+}
+
+.footer-content{
+    text-align: left;
+    padding: 0 25px;
+}
+
+.footer-content h1{
+    padding-top: 50px;
+    font-size: 1.5em;
+}
+
+.social-media{
+    text-align: left;
+    padding: 0 25px;
+}
+
+.social-media h1{
+    padding-top: 30px;
+    font-size: 1.5em;
+}
+
+.contact-form{
+    text-align: center;
+}
+
+.footer-content i{
+    font-size: 15px;
+}
+
+.social-media i{
+    font-size: 15px;
+}
+
+.footer-copyright{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    left: 0;
+}
+
+.footer-copyright p{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+/* media query */
+@media (min-width: 900px){
+
+.header ul{
+    padding-left: 10px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    padding: 18px 22px;
+    font-size: 22px;
+}
+
+.header h1{
+    padding-left: 28px;
+    color: white;
+    font-size: 30px;
+}
+
+.about-section-title h1{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.about-section-image img{
+    margin-top: 3%;
+    height: 400px;
+    width: 400px;
+}
+
+.about-section-content{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.about-who{
+    display: block;
+    padding-top: 35px;
+    line-height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-who h1{
+    font-size: 30px;
+}
+
+.about-who h3{
+    font-size: 22px;
+}
+
+.about-section-content p {
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+.box-for-skill{
+    position: relative;
+    width: 90%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.skill h1{
+    text-align: center;
+    padding-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+
+.skill {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+}
+
+.box-for-achievement{
+    position: relative;
+    width: 90%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.achievement {
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.achievement h1{
+    padding-top: 40px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.achievement p{
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-color: rgb(2, 2, 39);
+
+}
+
+.footer-content{
+    text-align: left;
+    padding: 0 25px;
+    margin-top: 10%;
+    font-size: 22px;
+}
+
+.social-media{
+    text-align: left;
+    padding: 0 25px;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 22px;
+}
+
+.social-media h1{
+    padding-top: 50px;
+    font-size: 1.5em;
+}
+
+.contact-form{
+    text-align: center;
+    margin-top: 14%;
+    margin-right: 10%;
+}
+
+.form input{
+    font-size: 20px;
+    margin-right: 10%;
+}
+
+.form textarea{
+    font-size: 20px;
+    margin-right: 10%;
+}
+
+
+.form .btn{
+    font-size: 18px;
+    margin-right: 10%;
+}
+
+.footer-content i{
+    font-size: 22px;
+}
+
+.social-media i{
+    font-size: 22px;
+}
+
+.footer-copyright{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    left: 0;
+}
+
+.footer-copyright p{
+    font-size: 15px;
+}
+
+}
